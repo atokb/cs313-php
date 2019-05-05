@@ -1,6 +1,15 @@
+div+h1:hover {
+    content: "Hover over my picture"
+}
+
 .image {
     width: 20rem;
     height: 0 auto;
-    transform: scaleY(-1);
-    transform: scaleX(-1);
+    /* transform: scaleY(-1);
+    transform: scaleX(-1); */
+}
+
+.image:hover {
+    transition: width 30rem;
+    height: 0 auto;
 }
