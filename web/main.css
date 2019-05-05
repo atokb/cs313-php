@@ -2,4 +2,5 @@
     width: 20rem;
     height: 0 auto;
     transform: scaleY(-1);
+    transform: scaleX(-1);
 }
