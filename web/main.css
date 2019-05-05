@@ -3,7 +3,7 @@ div h1:hover {
 }
 
 p:first-letter {
-    font: bold italic 3em / .5 serif;
+    font: bold 3em / .5 serif;
     color: #3f51b5;
 }
 
