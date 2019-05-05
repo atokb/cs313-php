@@ -8,10 +8,10 @@ p:first-letter {
 }
 
 .image {
-    width: 13rem;
+    width: 11rem;
     float: left;
     padding: 15px;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 .image:hover {
