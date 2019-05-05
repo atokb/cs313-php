@@ -8,8 +8,7 @@ p:first-letter {
 }
 
 .image {
-    width: 20rem;
-    height: 0 auto;
+    /* width: 20rem; */
     float: left;
     overflow: auto;
 }
