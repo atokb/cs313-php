@@ -5,10 +5,6 @@ div h1:hover {
 .image {
     width: 20rem;
     height: 0 auto;
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
 }
 
 .image:hover {

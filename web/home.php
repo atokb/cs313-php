@@ -21,7 +21,9 @@ $currentPage = 'home';
       <div>
         <img class="image" src="me.JPG" alt="myself">
       </div>
+      <hr>
       <div>
+          <h3>A Bit About Me</h3>
           <p>
             I started studying Web Development after I enrolled in BYU-Idaho's online program; which was made possible through BYU-Pathway<br>
             My interest in the web came as a result of my desire to pursue a degree that would allow me work remotely, without having to be Software Development related.<br>
