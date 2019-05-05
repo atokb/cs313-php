@@ -1,5 +1,5 @@
 .image {
     width: 20rem;
-    height: 0 auto;
+    /* height: 0 auto; */
     transform: rotate(360deg);
 }
