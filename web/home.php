@@ -19,7 +19,7 @@ $currentPage = 'home';
   <div class="jumbotron">
       <h1>Welcome to Ato Brown's Page</h1>
       <div>
-        <img class="img-fluid" src="me.jpg" alt="myself">
+        <img class="img-fluid" src="me.JPG" alt="myself">
       </div>
       <div>
           <p>
