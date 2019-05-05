@@ -11,6 +11,7 @@ p:first-letter {
     width: 20rem;
     height: 0 auto;
     float: left;
+    overflow: auto;
 }
 
 .image:hover {
