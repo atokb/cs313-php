@@ -8,7 +8,7 @@ $currentPage = 'assignments';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Almost Done...</title>
+  <title>Assignments</title>
 
 </head>
 <body>
@@ -18,7 +18,8 @@ $currentPage = 'assignments';
     ?>
   </header>
 
-<div>
+<div class="jumbotron">
+    <h1>Almost Done...</h1>
     <p>Keep Watching This Space for Amazing Links</p> 
 </div>
 
