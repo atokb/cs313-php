@@ -10,6 +10,7 @@ p:first-letter {
 .image {
     width: 20rem;
     float: left;
+    margin: 0px, 15px, 15px, 0px;
     overflow: auto;
 }
 
