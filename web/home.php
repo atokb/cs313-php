@@ -18,22 +18,16 @@ $currentPage = 'home';
   ?>
   <div class="jumbotron">
       <h1>Welcome</h1>
-      <div>
-        <img class="image" src="me.JPG" alt="myself">
-      </div>
       <hr>
-      <div>
-          <h3>A Bit About Me</h3>
-          <p>
+        <img class="image" src="me.JPG" alt="myself">
+        <h3>A Bit About Me</h3>
+        <p>
             I started studying Web Development after I enrolled in BYU-Idaho's online program; which was made possible through BYU-Pathway<br>
             My interest in the web came as a result of my desire to pursue a degree that would allow me work remotely, without having to be Software Development related.<br>
             In Ghana; where I come from, many people love using technology, but most people gear towards software or computer science, because of the current demand.<br>
             I therefore saw the web as an option which would be a future benefit; since it's possibilities such as web apps, e-commerce, API's etc, has not really been explored in Ghana.<br>
             Listening to music, dancing, playing soccer, running, singing, and exploring new things are some of the things I love to do, when I get some time away from coding.
         </p>
-      </div>
   </div>
-
-</div>
 </body>
 </html>

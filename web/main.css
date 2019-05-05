@@ -10,6 +10,7 @@ p:first-letter {
 .image {
     width: 20rem;
     height: 0 auto;
+    float: left;
 }
 
 .image:hover {
