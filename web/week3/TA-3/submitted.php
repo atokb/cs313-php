@@ -22,6 +22,7 @@ $name = $email = $major = $comments = "";
 
   if (empty($_POST["continents"])) {
     $continentErr = "continent is required";
+    echo "no continents post var";
   } else {
     $continents = $_POST["continents"];
     echo "I am here";
@@ -47,9 +48,13 @@ $name = $email = $major = $comments = "";
 </head>
 <body>
 <p>Name: <?php echo $name ?></p>
-<p>Where you've visited <?php echo($_POST[$continents]); foreach ($continents as $continent) {
-    echo $continent;
-} ?></p>
+<p>Where you've visited
+ <?php 
+//  foreach ($continents as $continent) {
+//     echo $continent;
+// }
+ ?>
+ </p>
 </body>
 </html>
 
