@@ -43,7 +43,7 @@ $name = $email = $major = $comments = "";
 </head>
 <body>
 <p>Name: <?php echo $name ?></p>
-<p>Where you've visited <?php echo foreach ($continent as $value) {
+<p>Where you've visited <?php foreach ($continent as $value) {
     echo $value;
 } ?></p>
 </body>
