@@ -83,8 +83,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label for="places">Antarctica</label><br>
     <input type="checkbox" name="continent" value="antarctica">
     </div>
+    <hr>
     <div>
-    <label for="comments">Computer Science </label><br>
+    <label for="comments">Comments</label><br>
     <textarea name="" id="" cols="30" rows="10"></textarea>
     </div>
     </legend>
