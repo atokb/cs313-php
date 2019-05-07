@@ -1,3 +1,36 @@
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $majorErr = $commentsErr = "";
+$name = $email = $major = $comments = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+  }
+
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+  }
+
+  if (empty($_POST["major"])) {
+    $majorErr = "Major is required";
+  } else {
+    $major = test_input($_POST["major"]);
+  }
+
+  if (empty($_POST["comments"])) {
+    $comments = "";
+  } else {
+    $comments = test_input($_POST["website"]);
+  }
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +47,7 @@
     <h1>Leave a Review</h1>
     <div>
     <label for="name">Name: </label>
-    <input type="text" name="name">
+    <input type="text" name="name" >
     </div>
     <div>
     <label for="email">Email: </label>
@@ -32,8 +65,18 @@
     <input type="radio" name="major" value="compEngineering">
     </div>
     <div>
-    <label for="comment" rows="5" cols="40">Computer Science </label>
+    <label for="comments">Computer Science </label><br>
     <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+    <label for="comments">Places Visited</label><br>
+    <input type="checkbox" name="continent" value="northAmerica">
+    <input type="checkbox" name="continent" value="southAmerica">
+    <input type="checkbox" name="continent" value="europe">
+    <input type="checkbox" name="continent" value="asia">
+    <input type="checkbox" name="continent" value="australia">
+    <input type="checkbox" name="continent" value="africa">
+    <input type="checkbox" name="continent" value="antarctica">
     </div>
     </legend>
     </form>
