@@ -69,13 +69,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <textarea name="" id="" cols="30" rows="10"></textarea>
     </div>
     <div>
-    <label for="comments">Places Visited</label><br>
+    <label for="places">Places Visited</label><br>
+    <label for="places">North America</label><br>
     <input type="checkbox" name="continent" value="northAmerica">
+    <label for="places">South America</label><br>
     <input type="checkbox" name="continent" value="southAmerica">
+    <label for="places">Europe</label><br>
     <input type="checkbox" name="continent" value="europe">
+    <label for="places">Asia</label><br>
     <input type="checkbox" name="continent" value="asia">
+    <label for="places">Australia</label><br>
     <input type="checkbox" name="continent" value="australia">
+    <label for="places">Africa</label><br>
     <input type="checkbox" name="continent" value="africa">
+    <label for="places">Antarctica</label><br>
     <input type="checkbox" name="continent" value="antarctica">
     </div>
     </legend>
