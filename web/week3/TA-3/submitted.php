@@ -42,8 +42,8 @@ $name = $email = $major = $comments = "";
     <title>Document</title>
 </head>
 <body>
-<p>Name: <? echo $name ?></p>
-<p>Where you've visited <?echo $continent ?></p>
+<p>Name: <?php echo $name ?></p>
+<p>Where you've visited <?php echo $continent ?></p>
 </body>
 </html>
 
