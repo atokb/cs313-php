@@ -24,6 +24,10 @@ $name = $email = $major = $comments = "";
     $continentErr = "continent is required";
   } else {
     $continents = $_POST["continents"];
+    echo "I am here";
+    foreach ($continents as $key => $value) {
+        echo $value;
+    }
   }
 
   if (empty($_POST["comments"])) {
