@@ -45,12 +45,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
     <legend>
     <h1>Leave a Review</h1>
-    <div>
+    <div class=form-group>
     <label for="name">Name: </label>
     <input type="text" name="name" >
     </div>
     <div>
-    <label for="email">Email: </label>
+    <label class=form-group for="email">Email: </label>
     <input type="text" name="email">
     </div>
     <div>
