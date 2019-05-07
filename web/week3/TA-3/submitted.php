@@ -20,6 +20,8 @@ $name = $email = $major = $comments = "";
     $major = $_POST["major"];
   }
 
+  echo $_POST["continents"]
+
   if (empty($_POST["continents"])) {
     $continentErr = "continent is required";
     echo "no continents post var";
@@ -55,6 +57,7 @@ $name = $email = $major = $comments = "";
 // }
  ?>
  </p>
+ <p>Major: <?php echo $major ?> </p>
 </body>
 </html>
 
