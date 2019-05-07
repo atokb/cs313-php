@@ -1,3 +1,41 @@
+<?php
+$nameErr = $emailErr = $majorErr = $commentsErr = "";
+$name = $email = $major = $comments = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = $_POST["name"];
+  }
+
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = $_POST["email"];
+  }
+
+  if (empty($_POST["major"])) {
+    $majorErr = "Major is required";
+  } else {
+    $major = $_POST["major"];
+  }
+
+  if (empty($_POST["places"])) {
+    $majorErr = "Places is required";
+  } else {
+    $places = $_POST["places"];
+  }
+
+  if (empty($_POST["comments"])) {
+    $comments = "";
+  } else {
+    $comments = $_POST["comments"];
+  }
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
