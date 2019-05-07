@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <hr>
     <div>
-    <label for="places">Places Visited</label><br>
+    <h4>Places Visited</h4>
     <label for="places">North America</label><br>
     <input type="checkbox" name="continent" value="northAmerica">
     <label for="places">South America</label><br>
