@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>PHP Hackz</title>
 </head>
 <body>
-<div class="jumbotron">
+<div class="jumbotron container">
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
     <legend>
     <h1>Leave a Review</h1>
