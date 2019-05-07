@@ -7,31 +7,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["name"])) {
     $nameErr = "Name is required";
   } else {
-    $name = test_input($_POST["name"]);
+    $name = $_POST["name"];
   }
 
   if (empty($_POST["email"])) {
     $emailErr = "Email is required";
   } else {
-    $email = test_input($_POST["email"]);
+    $email = $_POST["email"];
   }
 
   if (empty($_POST["major"])) {
     $majorErr = "Major is required";
   } else {
-    $major = test_input($_POST["major"]);
+    $major = $_POST["major"];
   }
 
   if (empty($_POST["places"])) {
     $majorErr = "Places is required";
   } else {
-    $major = test_input($_POST["places"]);
+    $major = $_POST["places"];
   }
 
   if (empty($_POST["comments"])) {
     $comments = "";
   } else {
-    $comments = test_input($_POST["website"]);
+    $comments = $_POST["comments"];
   }
 
 }
