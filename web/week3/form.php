@@ -21,6 +21,7 @@
     <input type="text" name="email">
     </div>
     <div>
+    <h4>Major</h4>
     <label for="major">Computer Science </label>
     <input type="radio" name="major" value="compScience">
     <label for="major">Web Design and Development </label>
@@ -29,9 +30,9 @@
     <input type="radio" name="major" value="compTech">
     <label for="major">Computer Engineering </label>
     <input type="radio" name="major" value="compEngineering">
-    <label for="comment" rows="5" cols="40">Computer Science </label>
     </div>
     <div>
+    <label for="comment" rows="5" cols="40">Computer Science </label>
     <textarea name="" id="" cols="30" rows="10"></textarea>
     </div>
     </legend>
