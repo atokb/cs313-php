@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div>
     <hr>
-    <h4>Major</h4>
+    <h3>Major</h3>
     <label for="major">Computer Science </label>
     <input type="radio" name="major" value="compScience" <?php if (isset($major) && $major=="compScience") echo "checked";?>><br>
     <label for="major">Web Design and Development </label>
@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <hr>
     <div>
-    <h4>Places Visited</h4>
+    <h3>Places Visited</h3>
     <label for="places">North America</label>
     <input type="checkbox" name="continent" value="northAmerica" <?php if (isset($places) && $places=="northAmerica") echo "checked";?>><br>
     <label for="places">South America</label>
