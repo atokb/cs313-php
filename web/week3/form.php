@@ -88,6 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label for="comments">Comments</label><br>
     <textarea name="" id="" cols="30" rows="10"></textarea>
     </div>
+    <input type="submit" name="submit" value="submit">
     </legend>
     </form>
 </div>
