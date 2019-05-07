@@ -2,7 +2,7 @@
 $nameErr = $emailErr = $majorErr = $commentsErr = "";
 $name = $email = $major = $comments = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if {
   if (empty($_POST["name"])) {
     $nameErr = "Name is required";
   } else {
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <div class="jumbotron container">
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+    <form action="submitted.php" method="post">
     <legend>
     <h1>Leave a Review</h1>
     <div class=form-group>
