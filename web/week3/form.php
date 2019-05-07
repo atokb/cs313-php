@@ -54,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="text" name="email">
     </div>
     <div>
+    <hr>
     <h4>Major</h4>
     <label for="major">Computer Science </label>
     <input type="radio" name="major" value="compScience">
@@ -64,10 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <label for="major">Computer Engineering </label>
     <input type="radio" name="major" value="compEngineering">
     </div>
-    <div>
-    <label for="comments">Computer Science </label><br>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
-    </div>
+    <hr>
     <div>
     <label for="places">Places Visited</label><br>
     <label for="places">North America</label><br>
@@ -84,6 +82,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="checkbox" name="continent" value="africa">
     <label for="places">Antarctica</label><br>
     <input type="checkbox" name="continent" value="antarctica">
+    </div>
+    <div>
+    <label for="comments">Computer Science </label><br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
     </div>
     </legend>
     </form>
