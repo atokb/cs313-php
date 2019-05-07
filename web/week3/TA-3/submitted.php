@@ -20,10 +20,10 @@ $name = $email = $major = $comments = "";
     $major = $_POST["major"];
   }
 
-  if (empty($_POST["continent"])) {
+  if (empty($_POST["continents"])) {
     $continentErr = "continent is required";
   } else {
-    $continent = $_POST["continent"];
+    $continents = $_POST["continents"];
   }
 
   if (empty($_POST["comments"])) {
@@ -43,8 +43,8 @@ $name = $email = $major = $comments = "";
 </head>
 <body>
 <p>Name: <?php echo $name ?></p>
-<p>Where you've visited <?php vardump($continent); foreach ($continent as $value) {
-    echo $value;
+<p>Where you've visited <?php vardump($continents); foreach ($continents as $continent) {
+    echo $continent;
 } ?></p>
 </body>
 </html>
