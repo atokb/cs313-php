@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <hr>
     <div>
     <label for="comments">Comments</label><br>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="comments" id="" cols="30" rows="10"></textarea>
     </div>
     <div>
     <input type="submit" name="submit" value="submit">
