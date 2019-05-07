@@ -46,12 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <legend>
     <h1>Leave a Review</h1>
     <div class=form-group>
-    <label for="name">Name: </label>
-    <input type="text" name="name" >
+    <label for="name" >Name: </label>
+    <input type="text" name="name" class="form-control">
     </div>
-    <div>
-    <label class=form-group for="email">Email: </label>
-    <input type="text" name="email">
+    <div class=form-group>
+    <label for="email" >Email: </label>
+    <input type="text" name="email" class="form-control">
     </div>
     <div>
     <hr>
