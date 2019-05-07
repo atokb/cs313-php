@@ -21,7 +21,7 @@ $name = $email = $major = $comments = "";
   }
 
   if (empty($_POST["continent"])) {
-    $majorErr = "continent is required";
+    $continentErr = "continent is required";
   } else {
     $continent = $_POST["continent"];
   }
@@ -43,7 +43,7 @@ $name = $email = $major = $comments = "";
 </head>
 <body>
 <p>Name: <?php echo $name ?></p>
-<p>Where you've visited <?php foreach ($continent as $value) {
+<p>Where you've visited <?php vardump($continent); foreach ($continent as $value) {
     echo $value;
 } ?></p>
 </body>
