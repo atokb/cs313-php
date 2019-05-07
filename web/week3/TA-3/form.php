@@ -21,10 +21,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $major = $_POST["major"];
   }
 
-  if (empty($_POST["places"])) {
-    $majorErr = "Places is required";
+  if (empty($_POST["continent"])) {
+    $majorErr = "continent is required";
   } else {
-    $places = $_POST["places"];
+    $continent = $_POST["continent"];
   }
 
   if (empty($_POST["comments"])) {
@@ -72,21 +72,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <hr>
     <div>
-    <h3>Places Visited</h3>
-    <label for="places">North America</label>
-    <input type="checkbox" name="continent" value="northAmerica" <?php if (isset($places) && $places=="northAmerica") echo "checked";?>><br>
-    <label for="places">South America</label>
-    <input type="checkbox" name="continent" value="southAmerica" <?php if (isset($places) && $places=="southAmerica") echo "checked";?>><br>
-    <label for="places">Europe</label>
-    <input type="checkbox" name="continent" value="europe" <?php if (isset($places) && $places=="europe") echo "checked";?>><br>
-    <label for="places">Asia</label>
-    <input type="checkbox" name="continent" value="asia" <?php if (isset($places) && $places=="asia") echo "checked";?>><br>
-    <label for="places">Australia</label>
-    <input type="checkbox" name="continent" value="australia" <?php if (isset($places) && $places=="australia") echo "checked";?>><br>    
-    <label for="places">Africa</label>
-    <input type="checkbox" name="continent" value="africa" <?php if (isset($places) && $places=="africa") echo "checked";?>><br>
-    <label for="places">Antarctica</label>
-    <input type="checkbox" name="continent" value="antarctica" <?php if (isset($places) && $places=="antarctica") echo "checked";?>>
+    <h3>continent Visited</h3>
+    <label for="continent">North America</label>
+    <input type="checkbox" name="continent" value="northAmerica" <?php if (isset($continent) && $continent=="northAmerica") echo "checked";?>><br>
+    <label for="continent">South America</label>
+    <input type="checkbox" name="continent" value="southAmerica" <?php if (isset($continent) && $continent=="southAmerica") echo "checked";?>><br>
+    <label for="continent">Europe</label>
+    <input type="checkbox" name="continent" value="europe" <?php if (isset($continent) && $continent=="europe") echo "checked";?>><br>
+    <label for="continent">Asia</label>
+    <input type="checkbox" name="continent" value="asia" <?php if (isset($continent) && $continent=="asia") echo "checked";?>><br>
+    <label for="continent">Australia</label>
+    <input type="checkbox" name="continent" value="australia" <?php if (isset($continent) && $continent=="australia") echo "checked";?>><br>    
+    <label for="continent">Africa</label>
+    <input type="checkbox" name="continent" value="africa" <?php if (isset($continent) && $continent=="africa") echo "checked";?>><br>
+    <label for="continent">Antarctica</label>
+    <input type="checkbox" name="continent" value="antarctica" <?php if (isset($continent) && $continent=="antarctica") echo "checked";?>>
     </div>
     <hr>
     <div>
