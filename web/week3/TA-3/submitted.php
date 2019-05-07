@@ -2,7 +2,6 @@
 $nameErr = $emailErr = $majorErr = $commentsErr = "";
 $name = $email = $major = $comments = "";
 
-if {
   if (empty($_POST["name"])) {
     $nameErr = "Name is required";
   } else {
@@ -32,8 +31,6 @@ if {
   } else {
     $comments = $_POST["comments"];
   }
-
-}
 ?>
 
 <!DOCTYPE html>
