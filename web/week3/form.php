@@ -12,18 +12,20 @@
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
     <legend>
     <h1>Leave a Review</h1>
-    <div>
     <label for="name">Name: </label>
     <input type="text" name="name">
-    </div>
-    <div>
     <label for="email">Email: </label>
     <input type="text" name="email">
-    </div>
-    <div>
-    <label for="major">Major: </label>
+    <label for="major">Computer Science </label>
     <input type="radio" name="major" value="compScience">
-    </div>
+    <label for="major">Web Design and Development </label>
+    <input type="radio" name="major" value="wdd">
+    <label for="major">Computer Information Technology </label>
+    <input type="radio" name="major" value="compTech">
+    <label for="major">Computer Engineering </label>
+    <input type="radio" name="major" value="compEngineering">
+    <label for="comment">Review</label>
+    <textarea name="comment" id="" cols="30" rows="10"></textarea>
     </legend>
     </form>
 </div>
