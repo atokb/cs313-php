@@ -20,7 +20,7 @@ $name = $email = $major = $comments = "";
     $major = $_POST["major"];
   }
 
-  echo $_POST["continents"]
+  echo $_POST["continents"];
 
   if (empty($_POST["continents"])) {
     $continentErr = "continent is required";
