@@ -57,30 +57,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <hr>
     <h4>Major</h4>
     <label for="major">Computer Science </label>
-    <input type="radio" name="major" value="compScience">
+    <input type="radio" name="major" value="compScience"><br>
     <label for="major">Web Design and Development </label>
-    <input type="radio" name="major" value="wdd">
+    <input type="radio" name="major" value="wdd"><br>
     <label for="major">Computer Information Technology </label>
-    <input type="radio" name="major" value="compTech">
+    <input type="radio" name="major" value="compTech"><br>
     <label for="major">Computer Engineering </label>
     <input type="radio" name="major" value="compEngineering">
     </div>
     <hr>
     <div>
     <h4>Places Visited</h4>
-    <label for="places">North America</label><br>
-    <input type="checkbox" name="continent" value="northAmerica">
-    <label for="places">South America</label><br>
-    <input type="checkbox" name="continent" value="southAmerica">
-    <label for="places">Europe</label><br>
-    <input type="checkbox" name="continent" value="europe">
-    <label for="places">Asia</label><br>
-    <input type="checkbox" name="continent" value="asia">
-    <label for="places">Australia</label><br>
-    <input type="checkbox" name="continent" value="australia">
-    <label for="places">Africa</label><br>
-    <input type="checkbox" name="continent" value="africa">
-    <label for="places">Antarctica</label><br>
+    <label for="places">North America</label>
+    <input type="checkbox" name="continent" value="northAmerica"><br>
+    <label for="places">South America</label>
+    <input type="checkbox" name="continent" value="southAmerica"><br>
+    <label for="places">Europe</label>
+    <input type="checkbox" name="continent" value="europe"><br>
+    <label for="places">Asia</label>
+    <input type="checkbox" name="continent" value="asia"><br>
+    <label for="places">Australia</label>
+    <input type="checkbox" name="continent" value="australia"><br>    
+    <label for="places">Africa</label>
+    <input type="checkbox" name="continent" value="africa"><br>
+    <label for="places">Antarctica</label>
     <input type="checkbox" name="continent" value="antarctica">
     </div>
     <hr>
