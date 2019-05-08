@@ -24,13 +24,13 @@
     <hr>
     <h3>Major</h3>
     <label for="major">Computer Science </label>
-    <input type="radio" name="major" value="compScience" <?php if (isset($major) && $major=="compScience") echo "checked";?>><br>
+    <input type="radio" name="major" value="Computer Science" <?php if (isset($major) && $major=="Computer Science") echo "checked";?>><br>
     <label for="major">Web Design and Development </label>
-    <input type="radio" name="major" value="wdd" <?php if (isset($major) && $major=="wdd") echo "checked";?>><br>
+    <input type="radio" name="major" value="Web Design and Development" <?php if (isset($major) && $major=="Web Design and Development") echo "checked";?>><br>
     <label for="major">Computer Information Technology </label>
-    <input type="radio" name="major" value="compTech" <?php if (isset($major) && $major=="compTech") echo "checked";?>><br>
+    <input type="radio" name="major" value="Computer Technology" <?php if (isset($major) && $major=="Computer Technology") echo "checked";?>><br>
     <label for="major">Computer Engineering </label>
-    <input type="radio" name="major" value="compEngineering" <?php if (isset($major) && $major=="compEngineering") echo "checked";?>>
+    <input type="radio" name="major" value="Computer Engineering" <?php if (isset($major) && $major=="Computer Engineering") echo "checked";?>>
     </div>
     <hr>
     <div>
