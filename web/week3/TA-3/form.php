@@ -36,9 +36,9 @@
     <div>
     <h3>Continents Visited</h3>
     <label for="continents">North America</label>
-    <input type="checkbox" name="continents[]" value="northAmerica"><br>
+    <input type="checkbox" name="continents[]" value="northAmerica" <?php if (isset($continents) && $continents=="northAmerica") echo "checked";?>><br>
     <label for="continents">South America</label>
-    <input type="checkbox" name="continents[]" value="southAmerica"><br>
+    <input type="checkbox" name="continents[]" value="southAmerica" <?php if (isset($continents) && $continents=="southAmerica") echo "checked";?>><br>
     <label for="continents">Europe</label>
     <input type="checkbox" name="continents[]" value="europe" <?php if (isset($continents) && $continents=="europe") echo "checked";?>><br>
     <label for="continents">Asia</label>
