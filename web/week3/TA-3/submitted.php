@@ -20,20 +20,7 @@ $name = $email = $major = $comments = "";
     $major = $_POST["major"];
   }
 
-  echo $_POST["continents"];
-
-//   if (empty($_POST["continents"])) {
-//     $continentErr = "continent is required";
-//     echo "no continents post var";
-//   } else {
-//     $continents = $_POST["continents"];
-//     echo "I am here";
-//     foreach ($continents as $key => $value) {
-//         echo $value;
-//     }
-//   }
-
-$continents = $_POST["continents"];
+    $continents = $_POST["continents"];
 
 
   if (empty($_POST["comments"])) {
