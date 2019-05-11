@@ -66,42 +66,42 @@ include('customer-info.php');
             <h3>Billing Information</h3>
             <div class="form-group">
               <label for="firstname"><i class=""></i> First Name</label>
-              <input class="form-control" type="text" name="firstname" placeholder="first name" value="<?php echo $firstname ?>">
+              <input class="form-control" type="text" name="firstname" placeholder="first name" value="<?php echo htmlspecialchars($firstname) ?>">
               <span class="error"> <?php echo $firstnameErr;?></span>
             </div>
             <div class="form-group">
               <label for="lastname"><i class=""></i> Last Name</label>
-              <input class="form-control" type="text" placeholder="last name" value="<?php echo $lastname ?>">
+              <input class="form-control" type="text" placeholder="last name" value="<?php echo htmlspecialchars($lastname) ?>">
               <span class="error"><?php echo $lastnameErr;?></span>
             </div>
             <div class="form-group">
               <label for="email"><i class=""></i> Email</label>
-              <input class="form-control" type="email" name="email" placeholder="email" value="<?php echo $email ?>">
+              <input class="form-control" type="email" name="email" placeholder="email" value="<?php echo htmlspecialchars($email) ?>">
               <span class="error"><?php echo $emailErr;?></span>
             </div>
             <div class="form-group">
               <label for="address"><i class=""></i> Address</label>
-              <input class="form-control" type="text" name="address" placeholder="address" value="<?php echo $address ?>">
+              <input class="form-control" type="text" name="address" placeholder="address" value="<?php echo htmlspecialchars($address) ?>">
               <span class="error"><?php echo $addressErr;?></span>
             </div>
             <div class="form-group">
               <label for="city"><i class=""></i> City</label>
-              <input class="form-control" type="text" name="city" placeholder="city" value="<?php echo $city ?>">
+              <input class="form-control" type="text" name="city" placeholder="city" value="<?php echo htmlspecialchars($city) ?>">
               <span class="error"><?php echo $cityErr;?></span>
             </div>
             <div class="form-group">
               <label for="state">State</label>
-              <input class="form-control" type="text" name="state" placeholder="state" value="<?php echo $state ?>">
+              <input class="form-control" type="text" name="state" placeholder="state" value="<?php echo htmlspecialchars($state) ?>">
               <span class="error"><?php echo $stateErr;?></span>
             </div>
             <div class="form-group">
               <label for="zip">Zip</label>
-              <input class="form-control" type="number" name="zip" placeholder="zip" value="<?php echo $zip ?>">
+              <input class="form-control" type="number" name="zip" placeholder="zip" value="<?php echo htmlspecialchars($zip) ?>">
               <span class="error"><?php echo $zipErr;?></span>
             </div>
             <div class="form-group">
               <label for="country">Country</label>
-              <input class="form-control" type="text" name="country" placeholder="country" value="<?php echo $country ?>">
+              <input class="form-control" type="text" name="country" placeholder="country" value="<?php echo htmlspecialchars($country) ?>">
               <span class="error"><?php echo $countryErr;?></span>
             </div>
           </div>
