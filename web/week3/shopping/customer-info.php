@@ -2,7 +2,20 @@
 $firstnameErr = $lastnameErr = $emailErr = $addressErr = $cityErr = $stateErr = $zipErr = $countryErr = "";
 $firstname = $lastname = $email = $address = $city = $state = $zip = $country = "";
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+if(isset($_POST["name"])){
+    if (empty($_POST['firstname']) 
+    || empty($_POST['lastname']) 
+    || empty($_POST['email'])
+    || empty($_POST['address'])
+    || empty($_POST['city'])
+    || empty($_POST['state'])
+    || empty($_POST['zip'])    
+    || empty($_POST['country'])){ 
+    $_SESSION['error'] = "Mandatory field(s) are missing, Please fill it again";
+    header("location: checkout.php");
+
+    
+    } else if($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($_POST["firstname"])) {
     $firstnameErr = "First Name is required";
     } else {
@@ -81,5 +94,6 @@ function test_input($data) {
   $data = stripslashes($data);
   $data = htmlspecialchars($data);
   return $data;
+}
 }
 ?>
