@@ -25,6 +25,9 @@ include('products-array.php');
         <tr>
           <th>Items</th>
           <th>&nbsp;</th>
+          <!-- images -->
+          <th></th>
+          <th>&nbsp;</th>
           <th>Price</th>
           <th>&nbsp;</th>
           <th>Action</th>
@@ -34,6 +37,8 @@ include('products-array.php');
         ?>
         <tr>
           <td><?php echo($items[$i]); ?></td>
+          <td>&nbsp;</td>
+          <td><img src=<?php echo express.jpg ?>><?php echo($images[$i]); ?></td>
           <td>&nbsp;</td>
           <td><?php echo($price[$i]); ?></td>
           <td>&nbsp;</td>

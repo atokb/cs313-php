@@ -31,6 +31,9 @@ include('customer-info.php');
           <tr>
             <th>Items</th>
             <th>&nbsp;</th>
+            <!--images-->
+            <th></th>
+            <th>&nbsp;</th>
             <th>Qty</th>
             <th>&nbsp;</th>
             <th>Price</th>
@@ -41,6 +44,8 @@ include('customer-info.php');
           ?>
           <tr>
             <td><?php echo( $items[$_SESSION["cart"][$i]] ); ?></td>
+            <td>&nbsp;</td>
+            <td><?php echo( $_SESSION["images"][$i] ); ?></td>
             <td>&nbsp;</td>
             <td><?php echo( $_SESSION["qty"][$i] ); ?></td>
             <td>&nbsp;</td>
