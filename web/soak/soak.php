@@ -33,9 +33,13 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
       <h1>Welcome to the Strength of A King</h1>
       <hr>
         <h3>Routines</h3>
-        <p>
-           
-        </p>
+        <div>
+        <?php foreach ($db->query('
+        SELECT * FROM routines') as $row) {
+            print "$row[1] $row[2]:$row[3]<br> <i>$row[4]</i><br><br>";
+        }
+        ?>
+        </div>
   </div>
 </body>
 </html>
