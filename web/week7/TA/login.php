@@ -1,12 +1,3 @@
-<?php
-$currentPage = 'soak-home';
-
-// $user = 'postgres';
-// $password = '';
-// $db = new PDO('pgsql:host=localhost;dbname=workout', $user, $password);
-// $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,23 +5,10 @@ $currentPage = 'soak-home';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <title>SOA-King</title>
+    <title>PHP Hackz - Login</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="soak.php">Strength Of A King</a>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link <?php if($currentPage == 'soak-home') echo 'bg-info'; ?>" href="soak.php">Home <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<div class="jumbotron">    
-  <div class="limiter">
+<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
@@ -58,7 +36,7 @@ $currentPage = 'soak-home';
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button class="login100-form-btn">
-								<a href="soak_start.php"> Login </a>
+								Login
 							</button>
 						</div>
 					</div>
@@ -68,7 +46,7 @@ $currentPage = 'soak-home';
 							Don’t have an account?
 						</span>
 
-						<a class="txt2" href="soak_signup.php">
+						<a class="txt2" href="signup.php">
 							Sign Up
 						</a>
 					</div>
@@ -76,7 +54,5 @@ $currentPage = 'soak-home';
 			</div>
 		</div>
 	</div>
-        </div>
-  </div>
 </body>
 </html>
