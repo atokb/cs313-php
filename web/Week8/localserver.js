@@ -1,14 +1,14 @@
 let http = require("http");
 
 
-let server = http.CreateServer((function onRequest(req, res) {
-    request.writeHead(200, { "Content-Type": "text/plain" });
-    if (request.path = "/home") {
-        response.write("<h1>Welcome to the Home Page<h1>");
-    } else if (request.path = "/getData") {
-        response.write('{"name": "Kenneth Ato Brown", "class": "CS 313"}');
+let server = http.createServer((function onRequest(request, response) {
+    response.writeHead(200, { "Content-Type": "text/plain" });
+    if (request.url = '/home') {
+        response.end("Welcome to the Home Page");
+    } else if (request.url = '/getData') {
+        response.end('{"name": "Kenneth Ato Brown", "class": "CS 313"}');
     } else {
-        response.end("Page Not Found");
+        response.end('Page Not Found');
     }
 }));
 
