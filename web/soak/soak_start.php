@@ -3,27 +3,25 @@ $currentPage = 'soak-start';
 
 include 'db.php';
 
-// $user = 'postgres';
-// $password = '';
-// $db = new PDO('pgsql:host=localhost;dbname=postgres', $user, $password);
-// $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+if (isset($_POST['email']))
+{
+	$email = $_POST['email'];
+	$pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-// // Check request method
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//   if (!isset($_POST['firstName']) && !isset($_POST['lastName'] && isset($_POST['email']) && !isset($_POST['pass'])) {
-//     header("Location: index.php");
-//   } else {
-//     $firstName = $_POST['firstName'];
-//     $lastName = $_POST['lastName'];
-    
-//     $password = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+$stmt = $db->prepare('SELECT email, password FROM users WHERE email=:email');
+$stmt->execute(array(':email' => $email));
+$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-//     $db->query("INSERT INTO users(user_id, firstname, user_lname, user_email, user_password) VALUES ($firstName, $lastName, $email, $password)", {
-//       header('Location: index.php');
-//     });
-
-//   }
-// }
+foreach ($rows as $row) {
+    if (password_verify($pass, $row['password'])) {
+        $_SESSION['email'] = $email;
+        
+    }
+    else {
+        header('Location: soak.php');
+    }
+}
+}
 
 ?>
 

@@ -43,7 +43,7 @@ $stmt->execute(array(':first_name' => $firstname, ':last_name' => $lastname, ':e
   <div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+				<form class="login100-form validate-form" method="post" action="soak_start.php">
 					<span class="login100-form-title p-b-26">
 						Login Here
 					</span>
