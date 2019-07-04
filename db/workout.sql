@@ -47,8 +47,8 @@ CREATE TABLE users (
     "goalsID" integer REFERENCES goals ("goalsID")
 );
 
-    INSERT INTO weight_category (category) VALUES ("90-120");
-    INSERT INTO "weight_category (category)" VALUES ("120-150");
-    INSERT INTO "weight_category (category)" VALUES ("150-180");
-    INSERT INTO "weight_category (category)" VALUES ("180-200");
-    INSERT INTO "weight_category (category)" VALUES ("200+");
+    INSERT INTO weight_category (category) VALUES ('90-120');
+    INSERT INTO weight_category (category) VALUES ('120-150');
+    INSERT INTO weight_category (category) VALUES ('150-180');
+    INSERT INTO weight_category (category) VALUES ('180-200');
+    INSERT INTO weight_category (category) VALUES ('200+');
