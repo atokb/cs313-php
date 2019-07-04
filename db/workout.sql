@@ -25,11 +25,7 @@ CREATE TABLE routines (
 
 CREATE TABLE weight_category (
     "weightID" serial PRIMARY KEY,
-    "90-120" INTEGER,
-    "120-150" INTEGER,
-    "150-180" INTEGER,
-    "180-200" INTEGER,
-    "200+" INTEGER
+    "category" text
 );
 
 CREATE TABLE goals (
@@ -51,3 +47,8 @@ CREATE TABLE users (
     "goalsID" integer REFERENCES goals ("goalsID")
 );
 
+    INSERT INTO weight_category (category) VALUES ("90-120");
+    INSERT INTO "weight_category (category)" VALUES ("120-150");
+    INSERT INTO "weight_category (category)" VALUES ("150-180");
+    INSERT INTO "weight_category (category)" VALUES ("180-200");
+    INSERT INTO "weight_category (category)" VALUES ("200+");
