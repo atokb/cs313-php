@@ -4,6 +4,17 @@ $currentPage = 'soak-home';
 session_start();
 
 include 'db.php';
+
+if (isset($_POST['firstName']))
+{
+	$firstname = $_POST['firstName'];
+	$lastname = $_POST['lastName'];
+	$email = $_POST['email'];
+	$pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+
+$stmt = $db->prepare('INSERT INTO users (first_name, last_name, email, password) VALUES (:first_name, :last_name, :email, :password)');
+$stmt->execute(array(':first_name' => $firstname, ':last_name' => $lastname, ':email' => $email, ':password' => $pass));
+}
 ?>
 
 <!DOCTYPE html>
