@@ -1,6 +1,8 @@
 <?php
 $currentPage = 'soak-start';
 
+include db.php;
+
 // $user = 'postgres';
 // $password = '';
 // $db = new PDO('pgsql:host=localhost;dbname=postgres', $user, $password);

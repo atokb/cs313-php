@@ -1,10 +1,9 @@
 <?php
 $currentPage = 'soak-home';
 
-// $user = 'postgres';
-// $password = '';
-// $db = new PDO('pgsql:host=localhost;dbname=workout', $user, $password);
-// $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+session_start();
+
+include 'db.php';
 ?>
 
 <!DOCTYPE html>
