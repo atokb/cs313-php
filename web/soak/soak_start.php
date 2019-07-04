@@ -23,6 +23,10 @@ foreach ($rows as $row) {
 }
 }
 
+else {
+    header('Location: soak.php');
+}
+
 ?>
 
 <!DOCTYPE html>
