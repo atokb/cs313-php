@@ -43,6 +43,8 @@ CREATE TABLE users (
     "userID" serial PRIMARY KEY,
     "first_name" varchar,
     "last_name" varchar,
+    "email" varchar,
+    "password" text,
     "age" integer,
     "weightID" integer REFERENCES weight_category ("weightID"),
     "routineID" integer REFERENCES routines ("routineID"),

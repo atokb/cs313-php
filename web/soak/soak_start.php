@@ -1,7 +1,7 @@
 <?php
 $currentPage = 'soak-start';
 
-include db.php;
+include 'db.php';
 
 // $user = 'postgres';
 // $password = '';

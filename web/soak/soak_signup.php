@@ -1,29 +1,22 @@
 <?php
 $currentPage = 'soak-signup';
 
-include db.php;
+include 'db.php';
 
-// $user = 'postgres';
-// $password = '';
-// $db = new PDO('pgsql:host=localhost;dbname=postgres', $user, $password);
-// $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+if (isset($_POST['firstName']))
+{
+	$firstname = $_POST['firstName'];
+	$lastname = $_POST['lastName'];
+	$email = $_POST['email'];
+	$pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);
 
-// // Check request method
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//   if (!isset($_POST['firstName']) && !isset($_POST['lastName'] && isset($_POST['email']) && !isset($_POST['pass'])) {
-//     header("Location: index.php");
-//   } else {
-//     $firstName = $_POST['firstName'];
-//     $lastName = $_POST['lastName'];
-    
-//     $password = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+$stmt = $db->prepare('INSERT INTO users (first_name, last_name, email, password) VALUES (:first_name, :last_name, :email, :password)');
+$stmt->execute(array(':first_name' => $firstname, ':last_name' => $lastname, ':email' => $email, ':password' => $pass));
+}
+// $_POST['lastName'];
+// $_POST['email'];
+// $_POST['pass'];)
 
-//     $db->query("INSERT INTO users(user_id, firstname, user_lname, user_email, user_password) VALUES ($firstName, $lastName, $email, $password)", {
-//       header('Location: index.php');
-//     });
-
-//   }
-// }
 
 ?>
 
