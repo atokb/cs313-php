@@ -19,8 +19,10 @@ $currentPage = 'assignments';
   </header>
 
 <div class="jumbotron">
-    <h1>Almost Done...</h1>
-    <p>Keep Watching This Space for Amazing Links</p> 
+    <h1>We are Up!!!</h1>
+    <div>
+    <a href="soak/soak.php" target="_blank">Workout Routine App</a>
+    </div>
 </div>
 
 </body>
